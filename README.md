@@ -1,6 +1,6 @@
-# GeraSeg
+# GeralSeg
 
-Site institucional da GeraSeg — Rastreamento Veicular & Monitoramento de Frotas. Landing page em Next.js com seções de soluções, sobre, processo de contratação, FAQ e contato via WhatsApp.
+Site institucional da GeralSeg — Rastreamento Veicular & Monitoramento de Frotas. Landing page em Next.js com seções de soluções, sobre, processo de contratação, FAQ e contato via WhatsApp.
 
 ## Stack
 

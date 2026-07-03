@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed } from "next/font/google";
+import "./globals.css";
+import { siteConfig } from "./site";
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -15,34 +17,29 @@ const barlowCondensed = Barlow_Condensed({
   display: "swap",
 });
 
-const title = "GeraSeg - Rastreamento Veicular & Monitoramento de Frotas";
-const description =
-  "Rastreamento GPS em tempo real, monitoramento de frotas e videomonitoramento veicular para empresas e pessoas em todo o Brasil.";
-const ogImage = "/images/og-image.jpg";
-
 export const metadata: Metadata = {
-  metadataBase: new URL("https://geralseg.com.br"),
-  title,
-  description,
+  metadataBase: new URL(siteConfig.url),
+  title: siteConfig.title,
+  description: siteConfig.description,
   openGraph: {
-    title,
-    description,
+    title: siteConfig.title,
+    description: siteConfig.description,
     locale: "pt_BR",
     type: "website",
     images: [
       {
-        url: ogImage,
+        url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "GeraSeg Rastreamento Veicular",
+        alt: "GeralSeg Rastreamento Veicular",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title,
-    description,
-    images: [ogImage],
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
   },
   icons: {
     icon: [

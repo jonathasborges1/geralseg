@@ -2,12 +2,13 @@
   "name": "geralseg",
   "version": "1.0.0",
   "private": true,
-  "description": "Site oficial da GeraSeg - Rastreamento Veicular & Monitoramento de Frotas.",
+  "description": "Site oficial da GeralSeg - Rastreamento Veicular & Monitoramento de Frotas.",
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
     "lucide-react": "^0.460.0",
@@ -16,9 +17,12 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
     "@types/node": "^22.9.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^15.5.20",
     "typescript": "^5.6.3"
   }
 }
